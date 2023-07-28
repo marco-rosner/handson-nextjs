@@ -1,12 +1,7 @@
 'use client'
 
 import Image from "next/image"
-import { useEffect } from "react"
-import { PostInterface, useStoreContext } from "../../ContextProvider"
-
-interface ToDoListInterface {
-    posts: PostInterface[]
-}
+import { useStoreContext } from "../../ContextProvider"
 
 export const ToDoList = () => {
     const posts = useStoreContext();
