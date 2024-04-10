@@ -1,10 +1,8 @@
-import './about.css'
-
-export default function RootLayout({
-  children,
-}: {
+interface RootLayout {
   children: React.ReactNode
-}) {
+}
+
+export default function RootLayout({ children }: RootLayout) {
   return (
     <html lang="en">
       <body className=''>{children}</body>

@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
-export const LogoComponent = () => {
+export const Logo = () => {
     const router = useRouter()
 
     return (
@@ -16,8 +16,8 @@ export const LogoComponent = () => {
                 height={37}
                 priority
             />
-           
-           <button type="button" onClick={() => router.push("/about")}>About</button>
+
+            <button type="button" onClick={() => router.push("/about")}>About</button>
         </div>
     )
 }
