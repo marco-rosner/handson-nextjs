@@ -1,10 +1,10 @@
 'use client'
 
 import Image from "next/image"
-import { useStoreContext } from "../../ContextProvider"
+import { useStore } from "../../hooks/useStore"
 
 export const ToDoList = () => {
-    const posts = useStoreContext();
+    const { posts } = useStore()
 
     return (
         <div className="relative flex flex-col before:w-[400px]">
